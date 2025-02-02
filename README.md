@@ -83,31 +83,54 @@ This project is a multilingual FAQ system that allows users to retrieve frequent
     API Usage
     
  1. Get All FAQs (with translation)
+
     GET /api/faqs?lang=fr
+    
  2. Get Single FAQ
+    
     GET /api/faqs/64df7d2aef3b4c001c9e321a?lang=hi
+    
  3. Add New FAQ
+  
     POST /api/faqs
+    
  4. Admin Panel Access
+    
     Go to: http://localhost:8000/admin
 
  Code Quality & Testing:
+ 
  1.Run PEP8 Checks (Python Linting)
+ 
    cd translation_service
+   
    flake8 .
+   
  2.Run Mocha/Chai Tests (Backend API & Models)
+ 
    cd backend
+   
    npm run check
+   
  3.Run Pytest (Flask API & Translation Service)
+ 
    cd translation_service
+   
    pytest
 
   Contribution Guidelines:
+  
  1.Fork the repository & create a new branch:
+ 
    git checkout -b feature-name
+   
  2.Make changes & commit:
+ 
    git commit -m "Added feature"
+   
  3.Push to your fork:
+ 
    git push origin feature-name
+   
  4.Create pull request
   
