@@ -1,3 +1,4 @@
+     
 This project is a multilingual FAQ system that allows users to retrieve frequently asked questions in different languages. It includes:
 
 -> React-Vite for frontend
@@ -25,21 +26,23 @@ This project is a multilingual FAQ system that allows users to retrieve frequent
     Create a .env file in the backend folder:
     PORT=8000
     MONGO_URI=mongodb://localhost:27017/faq_db
+    
     REDIS_URL=redis://localhost:6379
+    
     ADMIN_COOKIE_NAME=admin-cookie
     ADMIN_COOKIE_PASSWORD=supersecret
     TRANSLATE_API_URL=http://localhost:8000/translate
-6. Start Services
+7. Start Services
    Start Backend (Express.js & MongoDB)
    cd backend
    npm start
-7. Start Frontend (React-Vite)
+8. Start Frontend (React-Vite)
    cd ../frontend
    npm run dev
-8. Start Translation Service (Flask & Google Translate)
+9. Start Translation Service (Flask & Google Translate)
    cd ../translation_service
    python translate_service.py
-9. Start Redis Server (if not running)
+10. Start Redis Server (if not running)
     redis-server
 
     API Usage
