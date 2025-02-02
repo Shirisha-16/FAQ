@@ -2,11 +2,17 @@
 This project is a multilingual FAQ system that allows users to retrieve frequently asked questions in different languages. It includes:
 
 -> React-Vite for frontend
+
 ->Node.js & Express for backend
+
 ->MongoDB as main database & Redis for Caching
+
 ->A Flask-based translation service using GoogleTrans
+
 ->Admin Panel using AdminBro
+
 ->Code quality checks using PEP8 (Python), ESLint (JavaScript)
+
 ->Unit tests using Mocha/Chai (JS) & Pytest (Python)
 
  Installation & Setup:
