@@ -17,19 +17,33 @@ This project is a multilingual FAQ system that allows users to retrieve frequent
 
  Installation & Setup:
  1. Clone the Repository
- git clone https://github.com/Shirisha-16/FAQ.git
- cd FAQ
+    
+   git clone https://github.com/Shirisha-16/FAQ.git
+
+   cd FAQ
+   
  2. Install Backend Dependencies
+ 
     cd backend
+    
     npm install
+    
  3. Install Frontend Dependencies
+
     cd ../frontend
+
     npm install
+    
  4. Set Up the Python Translation Service
+
     cd ../translation_service
-    pip install -r requirements.txt
+
+     pip install -r requirements.txt
+    
  5. Set Up Environment Variables
+
     Create a .env file in the backend folder:
+
     PORT=8000
     
     MONGO_URI=mongodb://localhost:27017/faq_db
@@ -42,20 +56,32 @@ This project is a multilingual FAQ system that allows users to retrieve frequent
     
     TRANSLATE_API_URL=http://localhost:8000/translate
     
-7. Start Services
+6. Start Services
+  
    Start Backend (Express.js & MongoDB)
+   
    cd backend
+   
    npm start
-8. Start Frontend (React-Vite)
+   
+7. Start Frontend (React-Vite)
+
    cd ../frontend
+   
    npm run dev
-9. Start Translation Service (Flask & Google Translate)
+   
+8. Start Translation Service (Flask & Google Translate)
+
    cd ../translation_service
+   
    python translate_service.py
-10. Start Redis Server (if not running)
+   
+9. Start Redis Server (if not running)
+    
     redis-server
 
     API Usage
+    
  1. Get All FAQs (with translation)
     GET /api/faqs?lang=fr
  2. Get Single FAQ
