@@ -25,13 +25,17 @@ This project is a multilingual FAQ system that allows users to retrieve frequent
  5. Set Up Environment Variables
     Create a .env file in the backend folder:
     PORT=8000
+    
     MONGO_URI=mongodb://localhost:27017/faq_db
     
     REDIS_URL=redis://localhost:6379
     
     ADMIN_COOKIE_NAME=admin-cookie
+    
     ADMIN_COOKIE_PASSWORD=supersecret
+    
     TRANSLATE_API_URL=http://localhost:8000/translate
+    
 7. Start Services
    Start Backend (Express.js & MongoDB)
    cd backend
